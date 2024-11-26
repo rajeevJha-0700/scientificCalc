@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myCALC</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+
+</head>
+
+<body id="body">
+
+  <div class="calc">
+    <div class="calcScreen">
+      <input class="inputArea" type="text" value="0" readonly>
+    </div>
+    <button class="rad">RAD<span class="indicator-Rad"></span></button>
+    <button class="deg">DEG<span class="indicator-Deg"></span></button>
+    <button class="ac">AC</button>
+    <div class="keys">
+      <!--reverse-->
+      <div class="reverse row-1">
+        <button class="sin btn  numTrigo">sin</button>
+        <button class="cos btn  numTrigo">cos</button>
+        <button class="tan btn  numTrigo">tan</button>
+        <button class="btn comma num">,</button>
+        <button class="btn num log" data-tooltip = "log(arg,base)">log</button>
+      </div>
+      <div class="inverse hidden">
+        <button class="sin-i btn  numITrigo">sin<sup>-1</sup></button>
+        <button class="cos-i btn  numITrigo">cos<sup>-1</sup></button>
+        <button class="tan-i btn  numITrigo">tan<sup>-1</sup></button>
+        <button class="ten-p btn num numTenPow">10<sup>^(</sup></button>
+        <button class="exp-p btn  num">exp</button>
+      </div>
+      <div class="row-2">
+        <button class="lsb btn num">(</button>
+        <button class="rsb btn num">)</button>
+        <button class="percent btn">%</button>
+        <button class="inv btn">INV</button>
+        <button class="del btn">⌫</button>
+      </div>
+      <div class="row-3">
+        <button class="factorial btn num">!</button>
+        <button class="pow btn">^</button>
+        <button class="x-sq btn">X<sup>2</sup></button>
+        <button class="pie btn num">pi</button>
+        <button class="sqrt num btn">√</button>
+      </div>
+      <div class="row-4">
+        <button class="six btn num NUM">6</button>
+        <button class="seven btn num NUM">7</button>
+        <button class="eight btn num NUM ">8</button>
+        <button class="nine btn num NUM">9</button>
+        <button class="divide btn num">/</button>
+      </div>
+      <div class="row-5">
+        <button class="two btn num NUM">2</button>
+        <button class="three btn num NUM">3</button>
+        <button class="four btn num NUM">4</button>
+        <button class="five btn num NUM">5</button>
+        <button class="multiply btn num">*</button>
+      </div>
+      <div class="row-6">
+        <button class="dbl-zero btn num NUM">00</button>
+        <button class="decimal btn num NUM">.</button>
+        <button class="zero btn num NUM">0</button>
+        <button class="one btn num NUM">1</button>
+        <button class="plus btn num">+</button>
+      </div>
+      <div class="row-7">
+        <button class="e btn num">e</button>
+        <button class="equality btn">=</button>
+        <button class="minus btn num">-</button>
+        <button class="prevOutput btn">pvs</button>
+      </div>
+    </div>
+  </div>
+  <script src="script3.js"></script>
+</body>
+
+</html>
