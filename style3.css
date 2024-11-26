@@ -1,0 +1,225 @@
+#body {
+    background-color: black;
+    text-align: center;
+    place-items: center;
+ }
+ 
+  
+ 
+ .calc {
+    border: 1px solid white;
+    width: fit-content;
+    border-radius:20px;
+    background-color:#5174f4;
+ }
+ 
+ .calcScreen {
+    border: 1px solid white;
+    margin: 10px;
+    height: fit-content;
+    width: fit-content;
+    
+ 
+ }
+ 
+ .inputArea {
+    height: 140px;
+    width: 425px;
+    background-color: white;
+    text-align: right;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight:bolder;
+    
+ }
+ 
+ 
+ .rad,
+ .deg {
+    position: relative;
+    height: 25px;
+    width: 60px;
+    background-color: gray;
+    font-weight: bolder;
+    border: 1px solid gray;
+    border-radius: 50px;
+ 
+ }
+ 
+ .indicator-Deg, .indicator-Rad {
+    position: absolute;
+    bottom: 3px;
+    right: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: gray;
+ }
+ 
+  .active{
+    position: absolute;
+    bottom: 3px;
+    right: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(207, 11, 11);
+ }
+ 
+ .ac {
+    height: 25px;
+    width: 60px;
+    background-color: gray;
+    font-weight: bolder;
+    border: 1px solid gray;
+    margin-left: 243px;
+    border-radius: 50px;
+ }
+ 
+ .rad:hover,
+ .deg:hover,
+ .ac:hover {
+    cursor: pointer;
+ }
+ 
+ .keys {
+    border: 1px solid white;
+    margin: 10px;
+    border-radius:20px;
+    background-color:rgb(172, 139, 174);
+ }
+ 
+ .reverse,
+ .row-2,
+ .row-3,
+ .row-4,
+ .row-5,
+ .row-6,
+ .inverse {
+    margin: 2px;
+    text-decoration: wavy;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    visibility: visible;
+ 
+ }
+ 
+ .hidden {
+    display: none;
+ }
+ 
+ .show {
+    display: flex;
+ 
+ }
+ 
+ .btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+ }
+ 
+ .del,
+ .ac {
+    background-color: rgb(228, 113, 113);
+ }
+ 
+ .sqrt,
+ .divide,
+ .multiply,
+ .plus {
+    background-color: rgb(73, 193, 240);
+ }
+ 
+ .sin,
+ .cos,
+ .tan,
+ .log,
+ .c-log,
+ .sin-i,
+ .cos-i,
+ .tan-i,
+ .ten-p,
+ .exp-p {
+    background-color: rgb(175, 92, 223);
+    font-size: 15px;
+ 
+ }
+ 
+ .rad,
+ .deg {
+    background-color: rgb(43, 244, 170)
+ }
+ 
+ .equality,
+ .e,
+ .minus,
+ .prevOutput {
+    background-color: orange;
+ }
+ 
+ .inv {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+ }
+ 
+ .blank {
+    background-color: #333333;
+ }
+ 
+ /* Style for the button */
+ .log {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Hide the tooltip text by default */
+  .log::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    bottom: 125%; /* Position above the button */
+    transform: translateX(-50%);
+    background : linear-gradient(to right , #833ab4 ,#e1306c,#fd1d1d,#fcaf45);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 1000;
+  }
+  
+  /* Tooltip arrow */
+  .log::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 115%; /* Slightly lower than tooltip */
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; /* Arrow color */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  
+  /* Show tooltip text on hover */
+  .log:hover::after,
+  .log:hover::before {
+    opacity: 1;
+    visibility:visible;
+ }
