@@ -1,1 +1,1 @@
-# This repo contains the code base of an average level scientific calculator
+# This repository contains the code base of an average level scientific calculator
